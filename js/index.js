@@ -46,6 +46,7 @@ console.log("Iteration 3.1:");
 let nome1 = '';
 for (const i of hacker1) {
     nome1 += i.toUpperCase();
+    if (hacker1.indexOf(i) === hacker1.length - 1) { continue; }
     nome1 += " ";
 }
 
