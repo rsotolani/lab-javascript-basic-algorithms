@@ -12,7 +12,7 @@ hacker1 = "Rodrigo S";
 console.log(`The driver's name is ${hacker1}`);
 
 let hacker2;
-hacker2 = "Rodrigo A";
+hacker2 = "Rodrigo A"
 console.log(`The navigator's name is ${hacker2}`);
 console.log("-----------------------------------");
 
@@ -34,11 +34,6 @@ if (hacker1.length > hacker2.length) {
     console.log(`Wow, you both have equally long names, ${hacker1.length} characters.`);
 }
 
-
-
-
-
-
 console.log("-----------------------------------");
 
 
@@ -48,9 +43,9 @@ console.log("-----------------------------------");
 */
 console.log("Iteration 3.1:");
 
-let nome1 = [];
-for (let i in hacker1) {
-    nome1 += hacker1[i].toUpperCase();
+let nome1 = '';
+for (const i of hacker1) {
+    nome1 += i.toUpperCase();
     nome1 += " ";
 }
 
