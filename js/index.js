@@ -8,11 +8,11 @@
 console.log("Iteration 1.1:");
 
 let hacker1;
-hacker1 = "Rodrigo Sotolani";
+hacker1 = "Rodrigo S";
 console.log(`The driver's name is ${hacker1}`);
 
 let hacker2;
-hacker2 = "Rodrigo A Sotolani";
+hacker2 = "Rodrigo A";
 console.log(`The navigator's name is ${hacker2}`);
 console.log("-----------------------------------");
 
@@ -33,6 +33,11 @@ if (hacker1.length > hacker2.length) {
 } else {
     console.log(`Wow, you both have equally long names, ${hacker1.length} characters.`);
 }
+
+
+
+
+
 
 console.log("-----------------------------------");
 
@@ -74,13 +79,25 @@ console.log("-----------------------------------");
 */
 console.log("Iteration 3.3:");
 
+/* primeira versão:
 if (hacker1 === hacker2) {
     console.log(`What?! You both have the same name?`);
 } else if (hacker1 < hacker2) {
     console.log(`The driver's name goes first.`);
 } else {
     console.log(`Yo, the navigator goes first definitely.`);
-}
+}*/
+switch (hacker1.localeCompare(hacker2)) {
+    case -1:
+        console.log(`The driver's name goes first.`);
+        break;
+    case 1:
+        console.log(`Yo, the navigator goes first definitely.`);
+        break;
+    case 0:
+        console.log(`What?! You both have the same name?`);
+        break;
+}  
 
 console.log("-----------------------------------");
 
